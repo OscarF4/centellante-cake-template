@@ -1,8 +1,8 @@
 <template>
   <v-app>
-<!--    <header class="header">-->
-<!--      <p class="header__text">Envíos gratis desde $55.000</p>-->
-<!--    </header>-->
+    <header class="header">
+      <p class="header__text">Envíos gratis desde $55.000</p>
+    </header>
     <nav class="navbar">
       <div class="nav__wrapper">
         <v-icon
@@ -66,6 +66,7 @@ export default {
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   padding: 0;
+  width: 100%;
   height: 72px;
   margin: 15px 0;
   padding: 0 30px
