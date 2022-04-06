@@ -1,8 +1,6 @@
 <template>
   <v-app>
-    <header class="header">
-      <p class="header__text">Envíos gratis desde $55.000</p>
-    </header>
+    <Header />
     <nav class="navbar">
       <div class="nav__wrapper">
         <v-icon
@@ -28,7 +26,12 @@
 </template>
 
 <script>
+import Header from '~/components/Header'
+
 export default {
+  components: {
+    Header
+  },
   data () {
     return {
       items: [
@@ -51,16 +54,6 @@ export default {
 </script>
 
 <style scoped>
-.header {
-  display: flex;
-  height: 35px;
-  background-color: sandybrown;
-}
-.header__text {
-  margin: auto;
-  font-size: 15px;
-  font-weight: bold;
-}
 .navbar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
